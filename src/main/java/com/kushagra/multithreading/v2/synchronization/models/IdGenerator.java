@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class IdGenerator implements Runnable {
-    private  int id = 20;
+    private int id = 100;
 
     @Override
     public void run() {
