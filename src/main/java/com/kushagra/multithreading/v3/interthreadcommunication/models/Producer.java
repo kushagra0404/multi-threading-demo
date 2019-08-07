@@ -15,7 +15,7 @@ public class Producer implements Runnable {
     }
 
     private void produce(int count) {
-        if(count == 0) return;
+        if (count == 0) return;
 
         synchronized (product) {
             product.setTotalProducedCount(product.getTotalProducedCount() + 1);
