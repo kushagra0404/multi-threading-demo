@@ -1,12 +1,5 @@
 package com.kushagra.multithreading.v1.basics.models;
 
-/**
- * @author kushagra
- * @implNote To use multithreading, create a class that implements Runnable interface, override run() method,
- * this is recommended way for multithreading in java
- * @see java.lang.Runnable
- */
-
 public class CustomRunnable implements Runnable {
     private int count = 20;
 
@@ -16,7 +9,7 @@ public class CustomRunnable implements Runnable {
     }
 
     private void decreaseCount() {
-        System.out.println("Count is: " + count + " Thread is: " + Thread.currentThread());
+        System.out.println("Count is: " + count + " Thread is: " + Thread.currentThread().getName());
 
         if (count == 0) {
             return;

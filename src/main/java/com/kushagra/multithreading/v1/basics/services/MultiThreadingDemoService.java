@@ -42,7 +42,5 @@ public class MultiThreadingDemoService {
 //        customThread4.start();
 
         //TODO: Implement Join method
-        //TODO: Check why only main thread is running everytime
-        System.out.println("Inside MultiThreadingDemoService, Thread is" + Thread.currentThread());
     }
 }

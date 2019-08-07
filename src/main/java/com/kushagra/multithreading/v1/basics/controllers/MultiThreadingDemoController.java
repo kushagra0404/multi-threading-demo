@@ -14,7 +14,7 @@ public class MultiThreadingDemoController {
 
     @GetMapping("start-multi-thread-demo")
     public ResponseEntity startMultiThreadingDemo() {
-         multiThreadingDemoService.startMultiThreadingDemo();
-         return ResponseEntity.status(HttpStatus.OK).body("Please check console!");
+        multiThreadingDemoService.startMultiThreadingDemo();
+        return ResponseEntity.status(HttpStatus.OK).body("Please check console!");
     }
 }
